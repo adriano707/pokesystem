@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>adriano o barriu</title>
+</head>
+<body>
+
+    <div id="form_contato">
+        <form action="contato.php" method="GET">
+            <h4>Pokesystem</h4>
+            <label>Nome: </label><input type="text" placeholder="Digite o nome do Pokemon"><br>
+            <label>Tipo: </label>
+            <select name="selecao" id="slc">
+                <option value="eletrico">Elétrico</option>
+                <option value="fogo">Fogo</option>
+                <option value="agua">Água</option>
+                <option value="terra">Terra</option>
+                <option value="gelo">Gelo</option>
+                <option value="psiquico">Psiquico</option>
+                <option value="planta">Planta</option>
+            </select>
+            <div id="poder">
+                <label>Ataque: </label><input type="number" min="0" max="100" placeholder="0 - 100"/><br>
+                <label>Defesa: </label><input type="number" min="0" max="100" placeholder="0 - 100"><br>
+            </div>
+            <label id="desc">Descrição: </label><textarea rows="5" cols="30" placeholder="quais as caracteristicas do pokemon?"></textarea><br>
+            <input type="button" name="botao" value="Click-me">
+        </form>
+    </div>
+    
+</body>
+</html> 
