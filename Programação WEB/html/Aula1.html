@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+</head>
+
+<style>
+
+
+    form {
+        /*Colocar no centro*/
+        margin: 0 auto;
+        width: 400px;
+        border: 1px solid rgb(64, 65, 150);
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 15px;
+        background-color:white;
+    }
+    
+    label {
+        width: 80px;
+        text-align: right;
+        display: inline-block;
+    }
+    
+    textarea {
+        font: 12px sans-serif;
+        width: 300px;
+        border: 1px solid teal;
+        border-radius:4px;
+        box-sizing: border-box;
+        vertical-align: top;
+        height: 100px;
+    }
+
+    button{
+        padding:5px;
+        margin-left: 328px;
+
+    }
+
+    input{
+        width: 298px;
+        border: 1px solid teal;
+    }
+
+    h3{
+        text-align: center;
+        ;
+    }
+
+    body{
+        background-color: black;
+    }
+
+</style>
+
+<body>
+
+    <div id="form_contato">
+        <form action="contato.php" method="GET">
+            <div name="titulo">
+                <h3>
+                    Contato
+                </h3>
+            </div>
+
+            <div name="nome">
+                <label>
+                    Nome:
+                </label>
+                <input type="text" id="nome_cliente" placeholder="Digite seu nome">
+            </div>
+
+            <br>
+
+            <div name="email">
+                <label>
+                    E-mail:
+                </label>
+                <input type="email" id="email_cliente" placeholder="Digite seu E-mail">
+            </div>
+
+            <br>
+
+            <div name="mensagem">
+                <label>
+                    Mensagem:
+                </label>
+                <textarea id="Mensagem_cliente" placeholder="Escreva sua mensagem"></textarea>
+                
+            </div>
+
+            <br>
+
+            <div name="botao">
+                <button id="botao_enviar">
+                    Enviar!
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
